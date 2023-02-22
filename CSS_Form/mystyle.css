@@ -1,0 +1,52 @@
+body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+.table {
+    border: 2px solid red;
+}
+
+header{
+        background-color: #333;
+        text-align: center;
+		color: #fff;
+        visibility: hidden;
+		padding: 0px 30px 0px 30px;
+        display: inline-block;
+		position: fixed;
+		top: 0;
+        height: 9%;
+		width: 100%;
+  }
+  
+#formContainer{
+        width:40%;
+        padding-top: 110px;
+        margin:auto;
+    }
+    #formC{
+        width:100%;
+    }
+    .theLabels{
+        width:30%
+        float:left;
+    }
+    .theInputs{
+        width:60%;
+        float:right;
+    }
