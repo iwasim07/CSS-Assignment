@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transition and Transform</title>
+        <style>
+            body{
+                background-color: rgb(5, 122, 108);
+            }
+            .figure1 {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                align-items: center;
+                background-color:rgb(227, 22, 155);
+                transition: transform 0.5s ease;
+            }
+            .figure2 {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                align-items: center;
+                background-color:rgb(227, 22, 155);
+            }
+            .figure3 {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                align-items: center;
+                background-color:rgb(227, 22, 155);
+            }
+            .figure2:hover {
+                transform: rotate(45deg) scale(1.2) skew(20deg);
+            }
+
+            .figure1:hover {
+                transform: rotate(45deg) scale(1.2) skew(20deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <button style="text-align: center; margin-top: 5px; margin-left: 3px;" onclick="redirectToPage()">Back</button>
+        </div>
+        <script>
+            function redirectToPage(){
+                window.location.href = "task.html";
+            }
+        </script>
+        <h1 style="text-align: center; color: aliceblue;">Difference Between Transition and Transform Property!</h1>
+        <h3 style="text-align: center; color:rgba(255, 255, 255, 0.781);">See, the below Figure....</h3>
+        <h3 style="text-align: center; color:rgba(255, 255, 255, 0.781);">Hover over it! It has both transition and transform properties.</h3><br><br><br>
+        <div class="figure1"></div><br><br><br>
+        <hr color="white">
+        <h3 style="text-align: center; color:rgba(255, 255, 255, 0.781);">What if we exclude transition?</h3><br><br><br>
+
+
+        <div class="figure2"></div><br><br><br>
+        <h3 style="text-align: center; color:rgba(255, 255, 255, 0.781);">It will rotate but that will happen so suddenly that we just see where it ends.</h3>
+
+        <hr color="white">
+        <h3 style="text-align: center; color:rgba(255, 255, 255, 0.781);">And if we remove transform?</h3><br><br><br>
+
+        <div class="figure3"></div><br><br><br>
+        <h3 style="text-align: center; color:rgba(255, 255, 255, 0.781);">It won't rotate.</h3>
+        <hr color="white">
+        <h3 style="text-align: center; color:rgba(255, 255, 255, 0.781);">So we loved thw first one....right?</h3>
+        <h3 style="text-align: center; color:rgba(255, 255, 255, 0.781);">It has both transition to smooth it and transform to rotate!!!</h3><br><br>
+
+
+    </body>
+</html>

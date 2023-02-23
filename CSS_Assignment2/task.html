@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Demo Of Tasks</Title>
+    </head>
+    <link rel="stylesheet" href="mystyle.css">
+    <body>
+        <h2 style="text-align: center;">Different Heights Of HTML</h2>
+        <div class="task1">
+            <p style="color: black;">Height:5px</p>
+            <p>Pixels(px) are relative to the viewing devices</p>
+            <hr size="5px" color="black">
+            
+            <p style="color: red;">Height:5em</po>
+            <p style="color: red;">Pixels(px) are relative to the viewing devices</p>
+            <hr style="height: 5rem;" color="red">
+
+            <p style="color: purple;">Height:5rem</p>
+            <p style="color: purple;">Pixels(px) are relative to font size of root element</p>
+            <hr style="height: 5rem;" color="purple">
+
+            <p style="color: green;">Height:5vw</p>
+            <p style="color: green;">Pixels(px) are relative to 1% of the width of the viewport*</p>
+            <hr style="height: 5vw;" color="green">
+
+            <p style="color: blueviolet;">Height:5vw</p>
+            <p style="color: blueviolet;">Pixels(px) are relative to 1% of the width of the viewport*</p>
+            <hr style="height: 5vw;" color="blueviolet">
+
+            <h2 style="text-align: center;">Let's apply Different Combinators</h2>
+            
+            <div class="ds">
+                <p>This is for Descendent Selector (space)</p>
+            </div>
+            <div class="ds">
+                <p>This descendent selector matches all elements that are the adjacent siblings of a specified element.</p>
+            </div>
+            <p>This is a span column so the styling isn't applied on it.</p>
+            <p>But this is not immediately followed.</p>
+
+            <hr color="black">
+
+            <div class="cs">
+                <p>This is for Child Selector(+)</p>
+            </div>
+            <div class="cs">
+                <p>This child selector selects all elements that are children of a specified element.</p>
+            </div>
+            <p>This is the paragraph which is outside the division.</p>
+            <p>But this is not immediately </p>
+
+            <hr color="black">
+
+            <p>This is for Adjacent Sibling Selector(+)</p>
+            <p>This adjacent sibling select all elements that are siblings of a specified element.</p>
+            <div class="asc">
+                <p>This is the paragraph which is outside the division.</p>
+            </div>
+            <p>But this is not immediately </p>
+
+            <hr color="black">
+
+            <p>This is for General Sibling Selector(~)</p>
+            <p>This General sibling select all elements that are siblings of a specified element.</p>
+            <div class="gsc">
+                <p>This is the paragraph which is outside the division.</p>
+            </div>
+            <div class="gsc">
+                <p>Same with this!</p>
+            </div>
+            <div class="gsc">
+                <p>So they all are siblins of the division and should have the styling.</p>
+            </div>
+            <div>
+                <button id="fixed" style="text-align: center;" onclick="redirectToPage()">See the Transition & Transform Demo</button>
+            </div>
+            <script>
+                function redirectToPage(){
+                    window.location.href = "transition.html";
+                }
+            </script>
+        </div>
+    </body>
+</html>
